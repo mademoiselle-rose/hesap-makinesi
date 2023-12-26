@@ -1,6 +1,13 @@
+
+
+#include<stdio.h>
+
 void hesaplama(int a, int b){
-		float a;
-		float b;
+
+	int toplama=a+b;
+	int cikarma=a-b;
+	int carpma=a*b;
+	int bolme=a/b;
 	
 		
 	printf("ilk sayiyi giriniz:");
@@ -10,6 +17,15 @@ void hesaplama(int a, int b){
 	scanf("%f", &b);
 		}
 	int main(){
+		
+		int a=0;
+		printf("ilk sayiyi giriniz:");
+	    scanf("%f", &a);
+	    
+	    int b=0;
+	    printf("ikinci sayiyi giriniz:");
+	    scanf("%f", &b);
+	
 		
 		int top = a+b;
 		int cik = a-b;
@@ -26,7 +42,7 @@ void hesaplama(int a, int b){
 	  scanf("%c", &secim);
 	  
 	  switch(secim){
-	  	case 1
+	  	case 1:
 	  	int toplama=(int a + int b);
 	  	printf("%f", toplama);
 	  	break;
@@ -52,6 +68,14 @@ void hesaplama(int a, int b){
 			
 	  }
 	  
+	  
+	  
+		return 0;
+	  	
+	}
+}
+	  
+
 	  
 	  
 		return 0;
