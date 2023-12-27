@@ -1,65 +1,89 @@
 
 
+
 #include<stdio.h>
 
-void hesaplama(int a, int b){
+void toplama(int a, int b){
 
-	int toplama=a+b;
-	int cikarma=a-b;
-	int carpma=a*b;
-	int bolme=a/b;
+int toplam=a+b;
+printf("%d", toplam);
+}	
+		
+void cikarma(int a, int b){
+	int cikar=a-b;
+	printf("%d", cikar);
 	
+}
+void carpma(int a, int b){
+	int carp=a*b;
+	printf("%d", carp);
+}
+void bolme(int a, int b){
+	int bol=a/b;
+	printf("%d", bol);
+}
+
 		
-	printf("ilk sayiyi giriniz:");
-	scanf("%f", &a);
+int main(){
+	int c=0;
+	int d=0;
+		
+	printf("toplama icin 1 e basiniz, cikarma icin 2 e basiniz, carpma icin 3 e basiniz, bolme icin 4 e basiniz:");
+	printf("\n");
 	
-	printf("ikinci sayiyi giriniz:");
-	scanf("%f", &b);
-		}
-	int main(){
+	int toplam=1;
+	int cikar=2;
+	int carp=3;
+	int bol=4;
 		
-		int a=0;
-		printf("ilk sayiyi giriniz:");
-	    scanf("%f", &a);
-	    
-	    int b=0;
-	    printf("ikinci sayiyi giriniz:");
-	    scanf("%f", &b);
-	
-		
-		int top = a+b;
-		int cik = a-b;
-		int carp = a*b;
-		int bol = a/b;
-		int toplama= 1;
-		int cikarma= 2;
-		int carpma=3;
-		int bolme=4;
-		printf("toplama icin 1 e basiniz, cikarma icin 2 e basiniz, carpma icin 3 e basiniz, bolme icin 4 e basiniz:");
-		
-	  char secim;
-	  printf("islemi giriniz:");
-	  scanf("%c", &secim);
+  int secim=0;
+  printf("islemi giriniz:");
+  scanf("%d", &secim);
 	  
 	  switch(secim){
 	  	case 1:
-	  	int toplama=(int a + int b);
-	  	printf("%f", toplama);
+	  		
+	  	printf("ilk sayiyi giriniz:");
+	    scanf("%d", &c);
+	    
+	    printf("ikinci sayiyi giriniz:");
+	    scanf("%d", &d);
+	     toplama(c,d);
+	
+	  	
 	  	break;
 	  	
 	  	case 2:
-	  	int cikarma=(int a - int b);
-	  	printf("%f", cikarma);
+	  		
+	  	printf("ilk sayiyi giriniz:");
+	    scanf("%d", &c);
+	    
+	    printf("ikinci sayiyi giriniz:");
+	    scanf("%d", &d);
+	    cikarma(c,d);
+	    
+	  	
 	  	break;
 	  	    
 	  	case 3:
-	  	int carpma=(int a * int b);
-		printf("%f", carpma);
+	  			printf("ilk sayiyi giriniz:");
+	    scanf("%d", &c);
+	    
+	    printf("ikinci sayiyi giriniz:");
+	    scanf("%d", &d);
+	    carpma(c,d);
+	  
+		
 		break;
 		  
 		case 4:
-		int bolme=(int a/ int b);
-		printf("%f", bolme);
+				printf("ilk sayiyi giriniz:");
+	    scanf("%d", &c);
+	    
+	    printf("ikinci sayiyi giriniz:");
+	    scanf("%d", &d);
+	    bolme(c,d);
+		
 	    break;      
 	    
 	    default:{
@@ -76,6 +100,3 @@ void hesaplama(int a, int b){
 }
 	  
 
-	  
-	  
-		
