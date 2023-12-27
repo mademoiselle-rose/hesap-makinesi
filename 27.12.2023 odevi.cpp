@@ -86,11 +86,11 @@ int main(){
 		
 	    break;      
 	    
-	    default:{
-			break;
-			printf("hatali islem yaptiniz:");
-			
-	  }
+	    default:
+	    	
+		printf("hatali islem yaptiniz:(");
+		break;	
+	  
 	  
 	  
 	  
@@ -98,5 +98,7 @@ int main(){
 	  	
 	}
 }
+
+
 	  
 
